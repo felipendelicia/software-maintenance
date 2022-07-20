@@ -4,6 +4,7 @@ const path = require('path')
 
 if (process.env.NODE_ENV !== 'production'){
     require('electron-reload')(__dirname, {
+        eletron:path.join(__dirname, '../node_modules', '.bin', 'electron')
     })
 }
 
@@ -11,8 +12,7 @@ let mainWindow
 
 const mainWindowOptions = {
     minHeight: 400,
-    minWidth: 600,
-    title: 'Maintenance software'
+    minWidth: 600
 }
 
 app.on('ready', ()=>{
@@ -22,4 +22,8 @@ app.on('ready', ()=>{
         protocol:'file',
         slashes:true
     }))
+
+    mainWindow.on('closed', ()=>{
+        app.quit()
+    })
 })
