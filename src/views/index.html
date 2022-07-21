@@ -10,13 +10,46 @@
     <title>Maintenance app</title>
 </head>
 <body>
-    <h1>Maintenance <b>Software</b></h1>
     <div class="functions-container">
         <div class="function-container">
-            Chequeo de disco
+            <h2>Chequeo de disco</h2>
+            <p>Analiza el disco duro y proporciona un informe del disco y corregira los errores de archivos o los sectores defectuosos. </p>
+            <div class="params-container">
+                <div class="params"> 
+                    <label>Volumen</label>
+                    <input/>
+                    <p>especifica la letra del volumen.</p>
+                </div>
+                <div class="params"> 
+                    <label>Param: /F</label>
+                    <input type="checkbox"/>
+                    <p>corrige los errores del disco.</p>
+                </div>
+                <div class="params"> 
+                    <label>Param: /R</label>
+                    <input type="checkbox"/>
+                    <p>encuentra sectores defectuosos y recupera la información legible.</p>
+                </div>
+                <div class="params"> 
+                    <label>Param: /X</label>
+                    <input type="checkbox"/>
+                    <p>obliga al volumen a desmontarse previamente.</p>
+                </div>
+                <div class="params"> 
+                    <label>Param: /I</label>
+                    <input type="checkbox"/>
+                    <p>realiza la comprobación de entradas de índice</p>
+                </div>
+                <div class="params"> 
+                    <label>Param: /C</label>
+                    <input type="checkbox"/>
+                    <p>omite la comprobación de ciclos dentro de la estructura de carpetas.</p>
+                </div>
+            </div>
         </div>
         <div class="function-container">
-
+            <h2>Remover archivos basura</h2>
+            <p>Los archivos basura pueden ser archivos temporales o grandes actualizaciones de sistema que no vamos a utilizar y que liberarlos supone un mejor funcionamiento del ordenador. </p>
         </div>
     </div>
 </body>
