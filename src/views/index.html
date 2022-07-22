@@ -10,13 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="../scripts/toggle-platforms.js"></script>
     <title>Maintenance app</title>
   </head>
   <body>
     <div class="platforms-available">
-        <input type="button" value="Windows"/>
-        <input type="button" value="Mac"/>
-        <input type="button" value="Linux"/>
+      <input
+        type="button"
+        value="Windows"
+        onclick="togglePlatforms('windows')"
+      />
+      <input type="button" value="Mac" onclick="togglePlatforms('mac')" />
+      <input type="button" value="Linux" onclick="togglePlatforms('linux')" />
     </div>
     <div class="windows-devices" id="windows-services">
       <div class="functions-container">
@@ -90,10 +95,10 @@
         </div>
       </div>
     </div>
-    <div class="linux-devices" id="linux-services">
+    <div class="linux-devices hidden" id="linux-services">
       Services are not available jet!
     </div>
-    <div class="mac-devices" id="mac-services">
+    <div class="mac-devices hidden" id="mac-services">
       Services are not available jet!
     </div>
   </body>

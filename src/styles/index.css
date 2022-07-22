@@ -1,3 +1,7 @@
+.hidden {
+    display: none;
+}
+
 .platforms-available{
     display: flex;
     justify-content: center;
