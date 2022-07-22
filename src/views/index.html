@@ -1,56 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/index.css"/>
-    <link rel="stylesheet" href="../styles/normalize.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap" rel="stylesheet"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Maintenance app</title>
-</head>
-<body>
-    <div class="functions-container">
-        <div class="function-container">
-            <h2>Chequeo de disco</h2>
-            <p>Analiza el disco duro y proporciona un informe del disco y corregira los errores de archivos o los sectores defectuosos. </p>
-            <div class="params-container">
-                <div class="params"> 
-                    <label>Volumen</label>
-                    <input/>
-                    <p>especifica la letra del volumen.</p>
-                </div>
-                <div class="params"> 
-                    <label>Param: /F</label>
-                    <input type="checkbox"/>
-                    <p>corrige los errores del disco.</p>
-                </div>
-                <div class="params"> 
-                    <label>Param: /R</label>
-                    <input type="checkbox"/>
-                    <p>encuentra sectores defectuosos y recupera la información legible.</p>
-                </div>
-                <div class="params"> 
-                    <label>Param: /X</label>
-                    <input type="checkbox"/>
-                    <p>obliga al volumen a desmontarse previamente.</p>
-                </div>
-                <div class="params"> 
-                    <label>Param: /I</label>
-                    <input type="checkbox"/>
-                    <p>realiza la comprobación de entradas de índice</p>
-                </div>
-                <div class="params"> 
-                    <label>Param: /C</label>
-                    <input type="checkbox"/>
-                    <p>omite la comprobación de ciclos dentro de la estructura de carpetas.</p>
-                </div>
-            </div>
-        </div>
-        <div class="function-container">
-            <h2>Remover archivos basura</h2>
-            <p>Los archivos basura pueden ser archivos temporales o grandes actualizaciones de sistema que no vamos a utilizar y que liberarlos supone un mejor funcionamiento del ordenador. </p>
-        </div>
+  </head>
+  <body>
+    <div class="platforms-available">
+        <input type="button" value="Windows"/>
+        <input type="button" value="Mac"/>
+        <input type="button" value="Linux"/>
     </div>
-</body>
+    <div class="windows-devices">
+      <div class="functions-container">
+        <div class="function-container">
+          <h2>Chequeo de disco</h2>
+          <p>
+            Analiza el disco duro y proporciona un informe del disco y corregira
+            los errores de archivos o los sectores defectuosos.
+          </p>
+          <div class="params-container">
+            <div class="params">
+              <label>Volumen</label>
+              <input />
+              <p>> especifica la letra del volumen.</p>
+            </div>
+            <div class="params">
+              <label>Param: /F</label>
+              <input type="checkbox" />
+              <p>> corrige los errores del disco.</p>
+            </div>
+            <div class="params">
+              <label>Param: /R</label>
+              <input type="checkbox" />
+              <p>
+                > encuentra sectores defectuosos y recupera la información
+                legible.
+              </p>
+            </div>
+            <div class="params">
+              <label>Param: /X</label>
+              <input type="checkbox" />
+              <p>> obliga al volumen a desmontarse previamente.</p>
+            </div>
+            <div class="params">
+              <label>Param: /I</label>
+              <input type="checkbox" />
+              <p>> realiza la comprobación de entradas de índice</p>
+            </div>
+            <div class="params">
+              <label>Param: /C</label>
+              <input type="checkbox" />
+              <p>
+                > omite la comprobación de ciclos dentro de la estructura de
+                carpetas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="function-container">
+          <h2>Remover archivos basura</h2>
+          <p>
+            Los archivos basura pueden ser archivos temporales o grandes
+            actualizaciones de sistema que no vamos a utilizar y que liberarlos
+            supone un mejor funcionamiento del ordenador.
+          </p>
+        </div>
+        <div class="function-container">
+          <h2>Desfragmentar disco</h2>
+          <p>
+            Puede brindarte mas en la unidad, tambien puede producir una
+            experiencia mas estable. Las unidades optimizadas siempre funcionan
+            mejor.
+          </p>
+        </div>
+        <div class="function-container">
+          <h2>Cambiar configuracion de arranque</h2>
+          <p>
+            Modificar configuracion de arranque para un inicio mucho mas rapido
+            del sistema.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
